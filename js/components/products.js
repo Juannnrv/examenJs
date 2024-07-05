@@ -12,19 +12,19 @@ export const allAbrigos = async (infoProduct) => {
                 <p>${infoProduct.nombre}</p>
                 <div class="info_price">
                     <small>$ ${infoProduct.precio}</small>
-                    <button data-id=${infoProduct.id} >Agregar</button>
+                    <button class="add" data-id=${infoProduct.id} >Agregar</button>
                 </div>
             </div> 
         </div>`;
     });
-    console.log(plantilla);
+    // console.log(plantilla);
     return plantilla;
 }
 
 export const allCamisas = async (infoProduct) => {
     // console.log(infoProduct);
     let data = infoProduct.camiseta;
-    console.log(data);
+    // console.log(data);
 
     let plantilla = "";
     data.map((infoProduct) => {
@@ -35,12 +35,12 @@ export const allCamisas = async (infoProduct) => {
                 <p>${infoProduct.nombre}</p>
                 <div class="info_price">
                     <small>$ ${infoProduct.precio}</small>
-                    <button data-id=${infoProduct.id} >Agregar</button>
+                    <button class="add" data-id=${infoProduct.id} >Agregar</button>
                 </div>
             </div> 
         </div>`;
     });
-    console.log(plantilla);
+    // console.log(plantilla);
     return plantilla;
 }
 
@@ -55,13 +55,13 @@ export const allPantalones = async (infoProduct) => {
             <img src=${infoProduct.imagen}>
             <div class="item_info">
                 <p>${infoProduct.nombre}</p>
-                <<div class="info_price">
-                <small>$ ${infoProduct.precio}</small>
-                <button data-id=${infoProduct.id} >Agregar</button>
-            </div>
-        </div> 
-    </div>`;
-});
-console.log(plantilla);
-return plantilla;
+                <div class="info_price">
+                    <small>$ ${infoProduct.precio}</small>
+                    <button class="add" data-id=${infoProduct.id} >Agregar</button>
+                </div>
+            </div> 
+        </div>`;
+    });
+    // console.log(plantilla);
+    return plantilla;
 }
